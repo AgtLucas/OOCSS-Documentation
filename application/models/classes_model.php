@@ -7,6 +7,11 @@ class Classes_model extends Model {
 		return $this->processArray($result);
 	}
 
+	function getClass($id) {
+		$result = $this->query("SELECT classes.*, options.* FROM `classes` LEFT JOIN `options` ON `classes`.`id` = `options`.`o_class_id` WHERE `classes`.`id`='" . $id . "'");
+		return $this->processArray($result);
+	}
+
 	function processArray($data) {
 		$newArray = array();
 
@@ -24,7 +29,7 @@ class Classes_model extends Model {
 					'added' => $item->added,
 					'options' => array()
 				);
-				
+
 			}
 
 			$newArray[$id]['options'][] = array(

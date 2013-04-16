@@ -7,10 +7,8 @@ $config['db_name'] = 'oocss_doc';
 $config['db_username'] = 'root';
 $config['db_password'] = '';
 
-
-
 //Don't edit
-$config['default_controller'] = 'main';
+$config['default_controller'] = 'classes';
 $config['error_controller'] = 'error';
 
 ?>
