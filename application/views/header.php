@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     
-    <title>Welcome to PIP</title>
+    <title>OCSS DOC</title>
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>static/css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>static/css/screen.css">
 </head>
 <body>

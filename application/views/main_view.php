@@ -1,10 +1,9 @@
 <?php include('header.php'); ?>
 	
-    <div id="content">
-        
-        <h1>Welcome to PIP</h1>
-        <p>To get started please read the documentation at <a href="http://pip.dev7studios.com/">http://pip.dev7studios.com</a>.</p>
-        
-    </div>
+    <?php foreach($classes as $class): ?>
+			
+		<?php echo $class['name'] ?>
+
+	<?php endforeach; ?>
 
 <?php include('footer.php'); ?>
