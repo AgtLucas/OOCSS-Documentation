@@ -5,6 +5,6 @@
 			'host' => 'localhost',
 			'user' => 'root',
 			'pass' => '',
-			'database' => 'blogcase_client'
+			'database' => 'ooocss_doc'
 		)
 	);

@@ -11,6 +11,12 @@
 		die('Config file and config template not found.');
 	}
 
-	$db = new Mysqlidb($config['DB']['host'], $config['DB']['user'], $config['DB']['pass'], $config['DB']['database']);
+	//Connect to DB
+	$db = new DBEngine($config['DB']['user'], $config['DB']['pass'], $config['DB']['database'], $config['DB']['host'], true);
 
-	var_dump($db);
+	//If error, die
+	if(!is_null($db->get_last_error())) {
+		die($error);
+	}
+
+	
